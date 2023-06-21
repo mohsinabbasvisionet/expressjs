@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="environmentGroups">
+      <list>
+        <environmentGroupState>
+          <option name="environments">
+            <list>
+              <environmentState>
+                <option name="id" value="dev_env" />
+                <option name="name" value="dev_env" />
+              </environmentState>
+            </list>
+          </option>
+          <option name="id" value="development" />
+          <option name="name" value="development" />
+        </environmentGroupState>
+      </list>
+    </option>
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="id" value="bf7d6bc9-14f9-426e-a976-6089d8901d31" />
+          <option name="name" value="API" />
+          <option name="requests">
+            <list>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;name&quot;:  &quot;dummy2&quot;,&#10;  &quot;password&quot;: &quot;dummy2-123&quot;,&#10;  &quot;email&quot;: &quot;dummy2@test.com&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="8d20e747-97ea-486b-8007-0f03c9c5ffba" />
+                <option name="method" value="POST" />
+                <option name="name" value="create-user" />
+                <option name="url" value="http://localhost:3000/create-users" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;password&quot;: &quot;changedPass123&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="20a0e76e-06fb-46fc-9423-d65432f3f7a0" />
+                <option name="method" value="PUT" />
+                <option name="name" value="update-user" />
+                <option name="url" value="http://localhost:3000/update-user/6491c47545b77c2873763618" />
+              </requestState>
+              <requestState>
+                <option name="id" value="d776f333-e97e-4ba3-851e-f5a8c1a3c968" />
+                <option name="method" value="GET" />
+                <option name="name" value="get-users" />
+                <option name="url" value="http://localhost:3000/users" />
+              </requestState>
+              <requestState>
+                <option name="id" value="aa881d9a-f724-41cb-8a95-7b16d5eae5a8" />
+                <option name="method" value="DELETE" />
+                <option name="name" value="delete-user" />
+                <option name="url" value="http://localhost:3000/delete-user/6492dc2333c7c3b8f2c1d770" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Sheraz&quot;,&#10;  &quot;password&quot;: &quot;changedPass123&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="17fbd65f-c57d-4b4a-a2b9-c5cedfe56731" />
+                <option name="method" value="POST" />
+                <option name="name" value="login" />
+                <option name="url" value="http://localhost:3000/login" />
+              </requestState>
+            </list>
+          </option>
+          <option name="sortWeight" value="1000000" />
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="folderPath" value="F:\expressjs\.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+        </folderState>
+      </list>
+    </option>
+    <option name="id" value="7bc33290-94be-4401-96a7-390f2026ae3d" />
+    <option name="selectedEnvironmentIds">
+      <set>
+        <option value="dev_env" />
+      </set>
+    </option>
+  </component>
+</project>
