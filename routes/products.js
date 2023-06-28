@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Product = require('../productModel');
-const jwt = require('jsonwebtoken');
 
 const authenticateUser = require('../middleware/auth');
 
@@ -103,7 +102,7 @@ router.delete('/:id', authenticateUser, isAdmin, async (req, res) => {
         res.json({ message: 'Product deleted successfully' });
       })
       .catch((error) => {
-        res.status(500).json({ error: 'Failed to update user' });
+        res.status(500).json({ error: 'Failed to update user' + error });
       });
 });
 

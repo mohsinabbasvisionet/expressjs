@@ -33,7 +33,7 @@ router.post('/', (req, res) => {
             res.json({ token });
         })
         .catch((error) => {
-            res.status(500).json({ error: 'Failed to authenticate' });
+            res.status(500).json({ error: 'Failed to authenticate '+error });
         });
 });
 

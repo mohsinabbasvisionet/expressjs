@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../userModel');
-const bcrypt = require("bcrypt");
+//const bcrypt = require("bcrypt");
 
 
 //signUp User
@@ -10,7 +10,7 @@ router.post('/', async (req, res) => {
         const { name, password, email } = req.body;
 
         // Hash the password
-        const hashedPassword = await bcrypt.hash(password, 10);
+        //const hashedPassword = await bcrypt.hash(password, 10);
 
         // Save the user to the database or perform any necessary operations
         // For simplicity, we'll just return the user information

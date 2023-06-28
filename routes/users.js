@@ -10,7 +10,7 @@ const User = require('../userModel');
 
 
 //Create new User
-router.post('/', (request, response, next) => {
+router.post('/', (request, response) => {
     const {name, password, email, role} = request.body;
 
     const newUser = new User({
@@ -53,7 +53,7 @@ router.put('/:id', (req, res) => {
         res.json({ message: 'User Role updated successfully' });
       })
       .catch((error) => {
-        res.status(500).json({ error: 'Failed to update user' });
+        res.status(500).json({ error: 'Failed to update user' + error });
       });
 });
 
@@ -66,7 +66,7 @@ router.delete('/:id', (req, res) => {
         res.json({ message: 'User deleted successfully' });
       })
       .catch((error) => {
-        res.status(500).json({ error: 'Failed to update user' });
+        res.status(500).json({ error: 'Failed to update user' + error });
       });
 });
 
