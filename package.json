@@ -5,6 +5,11 @@
   "scripts": {
     "start": "nodemon ./bin/www"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cookie-parser": "~1.4.4",
@@ -20,6 +25,7 @@
   "devDependencies": {
     "eslint": "^8.43.0",
     "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
     "nodemon": "^2.0.22"
   }
 }

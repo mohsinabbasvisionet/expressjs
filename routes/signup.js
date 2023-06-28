@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../userModel');
-//const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt");
 
 
 //signUp User
