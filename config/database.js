@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
-const connection_Url = "mongodb+srv://expressdb:expressdb123@cluster0.qwvzk0u.mongodb.net/express";
+const dbHost = process.env.DB_HOST;
+const dbUser = process.env.DB_USER;
+const dbPassword = process.env.DB_PASSWORD;
+
+const connection_Url = "mongodb+srv://"+dbUser+":"+dbPassword+"@"+dbHost+"/express";
 exports.connect = () => {
     mongoose.connect(connection_Url, {}).then(() => {
         console.log("Database Connected");
